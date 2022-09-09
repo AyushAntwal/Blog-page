@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(151, 230, 203);
+}
+
+.p_truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.h_truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: underline;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: rgb(170, 210, 236);
+}
+
+.lable
+{
+    text-decoration: solid;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.tost
+{
+    z-index: 5;
+    color: white;
+}
+.toast-text
+{
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card
+{
+    background-color: rgb(127, 131, 116);
+    color: white;
+}
+
+.card-header
+{
+    background-color: rgb(60, 60, 64);
+}

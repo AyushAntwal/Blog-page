@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './pages/home';
+import { useEffect, useState } from "react";
+import { collection, getDocs } from "firebase/firestore/lite";
+import { db } from './database/configDB'
 
 function App() {
+  const [data, setData] = useState([]);
+  useEffect(()=>{
+      const getBlogs = async () => {
+          const dbrefrence = collection(db , 'blogs');
+          const temp = await getDocs(dbrefrence);
+          setData(temp.docs.map((doc)=>({...doc.data(), id: doc.id})));
+      }
+      getBlogs();
+  }, [])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home data= {data}/>
     </div>
   );
 }
