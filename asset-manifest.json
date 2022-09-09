@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/AyushAntwal/Blog-page.git/static/css/main.3fef3ca7.css",
+    "main.js": "/AyushAntwal/Blog-page.git/static/js/main.8340f0e2.js",
+    "static/media/empty.png": "/AyushAntwal/Blog-page.git/static/media/empty.d931f8e8b9ca19de5148.png",
+    "index.html": "/AyushAntwal/Blog-page.git/index.html",
+    "main.3fef3ca7.css.map": "/AyushAntwal/Blog-page.git/static/css/main.3fef3ca7.css.map",
+    "main.8340f0e2.js.map": "/AyushAntwal/Blog-page.git/static/js/main.8340f0e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3fef3ca7.css",
+    "static/js/main.8340f0e2.js"
+  ]
+}
